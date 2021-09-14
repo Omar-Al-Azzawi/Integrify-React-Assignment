@@ -3,8 +3,9 @@ import "./Card.css";
 import Button from "./Button";
 import { Link } from "react-router-dom";
 
-function Card({ name, username, website, id }) {
+function Card() {
   const [infos, setInfos] = useState("");
+
   useEffect(() => {
     fetch("https://jsonplaceholder.typicode.com/users")
       .then((res) => res.json())
@@ -20,7 +21,7 @@ function Card({ name, username, website, id }) {
             <h3>{info.name}</h3>
             <p>@{info.username}</p>
             <p>
-              <a href="#">http://{info.website}</a>
+              <Link to="/">http://{info.website}</Link>
             </p>
             <Link to={`/users/${info.id}`}>
               <Button />
