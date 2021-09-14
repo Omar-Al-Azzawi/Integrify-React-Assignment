@@ -15,6 +15,7 @@ function User() {
     <>
       {infos &&
         infos
+          // eslint-disable-next-line eqeqeq
           .filter((info) => info.id == id)
           .map((info) => (
             <div key={info.id} className="user_container">
