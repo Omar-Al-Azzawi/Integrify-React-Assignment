@@ -15,7 +15,7 @@ function User() {
     <>
       {infos &&
         infos
-          .filter((info, index) => info.id == id)
+          .filter((info) => info.id == id)
           .map((info) => (
             <div key={info.id} className="user_container">
               <h2>-name: {info.name}</h2>

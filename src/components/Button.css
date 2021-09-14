@@ -1,0 +1,16 @@
+button {
+  color: #fff;
+  background-color: lightskyblue;
+  padding: 0.8rem 2rem;
+  border: none;
+  outline: none;
+  border-radius: 0.4rem;
+  margin-left: 2.2rem;
+  margin-top: 1.6rem;
+  transition: all 300ms ease-in-out;
+  cursor: pointer;
+  font-size: 1rem;
+}
+button:hover {
+  background-color: mediumturquoise;
+}

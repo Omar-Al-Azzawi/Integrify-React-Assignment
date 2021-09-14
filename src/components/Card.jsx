@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./Card.css";
+import Button from "./Button";
 import { Link } from "react-router-dom";
 
 function Card({ name, username, website, id }) {
@@ -22,7 +23,7 @@ function Card({ name, username, website, id }) {
               <a href="#">http://{info.website}</a>
             </p>
             <Link to={`/users/${info.id}`}>
-              <button>MORE DETAILS</button>
+              <Button />
             </Link>
           </div>
         ))}
